@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier</title>
+    <link href="style4.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="logo.png" alt="Logo de Votre Site E-commerce">
+        </div>
+        <hr class="separator">
+    </div>
+</header>
+
+<section class="shopping-cart">
+    <div class="button-group" style="margin-top: 20px;">
+        <button class="btn btn-primary" onclick="location.href='identification.html'">Se connecter</button>
+        <button class="btn btn-secondary" onclick="location.href='Accueil.html'">Retourner à l'accueil</button>
+    </div>
+    <h2>Mon Panier</h2>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Produits</th>
+                <th>Prix unitaire</th>
+                <th>Quantité</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="cart-item">
+                        <img src="article1" alt="Produit 1" style="width: 50px;">
+                        <h4>Produit 1</h4>
+                    </div>
+                </td>
+                <td>10,00 €</td>
+                <td>
+                    <input type="number" value="1" min="1">
+                </td>
+                <td>10,00 €</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-item">
+                        <img src="Produit 2" alt="Produit 2" style="width: 50px;">
+                        <h4>Produit 2</h4>
+                    </div>
+                </td>
+                <td>9,50 €</td>
+                <td>
+                    <input type="number" value="1" min="1">
+                </td>
+                <td>9,50 €</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-item">
+                        <img src="Produit 3" alt="Produit 3" style="width: 50px;">
+                        <h4>Produit 3</h4>
+                    </div>
+                </td>
+                <td>8,00 €</td>
+                <td>
+                    <input type="number" value="1" min="1">
+                </td>
+                <td>8,00 €</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="cart-summary">
+        <h3>Récapitulatif de la commande</h3>
+        <p>Total des produits : 27,50 €</p>
+        <hr>
+        <p><strong>Total à payer : 27,50 €</strong></p>
+        <button class="btn btn-success">Valider la Commande</button>
+        
+        
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Food Truck École. Tous droits réservés.</p>
+</footer>
+</body>
+</html>

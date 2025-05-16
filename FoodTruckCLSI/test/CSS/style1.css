@@ -1,0 +1,222 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff; 
+    color: #333; 
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header,
+footer {
+    background-color: #333; 
+    color: #fff;
+    padding: 30px 0;
+}
+
+.logo img {
+    width: 250px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+hr.separator {
+    width: 100%;
+    margin: 10px 0;
+    border: none;
+    border-top: 2px solid #555;
+}
+
+.search-bar input {
+    padding: 15px;
+    width: 93%;
+    border: none;
+    background-color: #eee;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 15px;
+    background-color: #f90; 
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; 
+}
+
+.search-bar button:hover {
+    background-color: #e07800; 
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s ease; 
+}
+
+nav ul li a:hover {
+    color: #f90; 
+}
+
+.header-tools {
+	margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.header-tools a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 25px;
+    font-size: 20px;
+    transition: color 0.3s ease; 
+}
+
+.header-tools a:hover {
+    color: #f90; 
+}
+
+footer {
+    background-color: #333; 
+    color: #fff;
+    padding: 30px 0;
+    border-top: 2px solid #555;
+}
+
+.footer-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-section {
+    flex: 1;
+    margin-bottom: 30px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    color: #fff;
+    font-size: 22px;
+    transition: color 0.3s ease; /* Transition pour effet au survol */
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s ease; /* Transition pour effet au survol */
+}
+
+.footer-section ul li a:hover {
+    color: #f90; /* Couleur secondaire au survol - Orange */
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.footer-section h3 a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold; /* Ajout du gras */
+    transition: color 0.3s ease; /* Transition pour effet au survol */
+}
+
+.footer-section h3 a:hover {
+    color: #f90; /* Changement de couleur au survol */
+}
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.login-button {
+    background-color: #a2d460;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button.login-button:hover {
+    background-color: #a2d460;
+}
