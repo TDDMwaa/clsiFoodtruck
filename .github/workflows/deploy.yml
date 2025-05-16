@@ -1,22 +1,23 @@
-name: FTP Deploy to AlwaysData
+name: 🚀 Deploy website on push
 
 on:
   push:
     branches:
-      - main
+      - main  # adapte si ta branche principale est différente
 
 jobs:
-  ftp-deploy:
+  web-deploy:
+    name: 🎉 Deploy
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4
 
-      - name: Deploy via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v3
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./  # <-- adapte si nécessaire, mais pas de commentaire YAML inline
+          local-dir: ./   # adapte ce chemin si besoin (ex: dist/, build/)
+          # remote-dir: www/  # décommente et modifie si ton dossier FTP n'est pas la racine
