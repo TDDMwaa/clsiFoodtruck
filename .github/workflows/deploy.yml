@@ -1,4 +1,4 @@
-name: 🚀 Deploy with FTP
+name: 🚀 Deploy website on push
 
 on:
   push:
@@ -6,18 +6,21 @@ on:
       - main
 
 jobs:
-  deploy:
+  web-deploy:
+    name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: 🚚 Get latest code
         uses: actions/checkout@v4
 
-      - name: Deploy via FTP
-        uses: lukasbischof/ftp-deploy@v1.2.0
+      - name: 📂 Sync files via FTPS
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ${{ secrets.FTP_HOST }}
-          user: ${{ secrets.FTP_USER }}
+          server: ftp-vip.alwaysdata.net
+          username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
-          localDir: ./  # ou ./dist
-          remoteDir: /www/
           protocol: ftps
+          port: 21
+          local-dir: ./   # ou ./dist si vous avez un build
+          server-dir: /www/FoodTruckCLSI/  # adapte selon ton projet
+          log-level: verbose
